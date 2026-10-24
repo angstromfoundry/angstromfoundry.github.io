@@ -1,0 +1,5 @@
+<div class="foundry-footer-row">
+  <div class="page__footer-copyright">&copy; <span data-copyright-year>{{ site.time | date: '%Y' }}</span> {{ site.name }} · <a href="https://github.com/academicpages/academicpages.github.io">Academic Pages</a></div>
+  <a class="footer-login" href="{{ '/login/' | relative_url }}">login</a>
+</div>
+<script>document.querySelectorAll('[data-copyright-year]').forEach(function(el){el.textContent=new Date().getFullYear();});</script>

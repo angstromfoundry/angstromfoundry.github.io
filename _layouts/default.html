@@ -1,0 +1,31 @@
+---
+layout: compress
+---
+
+{% include base_path %}
+
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 }}" class="no-js"{% if site.site_theme == "dark" %} data-theme="dark"{% endif %}>
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+  </head>
+
+  <body{% if page.member_login %} class="member-login-page"{% endif %}>
+
+    {% unless page.member_login %}{% include masthead.html %}{% endunless %}
+
+    {{ content }}
+
+    {% unless page.member_login %}
+    <div class="page__footer">
+      <footer>
+        {% include footer.html %}
+      </footer>
+    </div>
+
+    {% include scripts.html %}
+    {% endunless %}
+
+  </body>
+</html>

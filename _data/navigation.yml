@@ -1,0 +1,13 @@
+main:
+  - title: "home"
+    url: /
+  - title: "team"
+    url: /team/
+  - title: "research"
+    url: /research/
+  - title: "products"
+    url: /publications/
+  - title: "news"
+    url: /news/
+  - title: "contact"
+    url: /contact/
