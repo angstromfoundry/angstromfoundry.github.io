@@ -1,0 +1,32 @@
+---
+title: Member login
+permalink: /login/
+layout: default
+member_login: true
+sitemap: false
+---
+
+<main class="member-login" aria-label="Login">
+  <div class="member-login__cards">
+    <section class="member-login__card" aria-labelledby="member-login-title">
+      <h1 id="member-login-title">Ångström Foundry</h1>
+      <fieldset>
+        <label for="member-email">email/phone</label>
+        <input id="member-email" type="text">
+        <label for="member-password">password/OTP</label>
+        <input id="member-password" type="password">
+        <button type="button" disabled>ÅF login</button>
+      </fieldset>
+    </section>
+    <section class="member-login__card" aria-labelledby="course-login-title">
+      <h2 id="course-login-title">course login</h2>
+      <fieldset>
+        <label for="course-student">student #</label>
+        <input id="course-student" type="text" inputmode="numeric">
+        <label for="course-pin">PIN</label>
+        <input id="course-pin" type="password" inputmode="numeric">
+        <button type="button" disabled>course login</button>
+      </fieldset>
+    </section>
+  </div>
+</main>

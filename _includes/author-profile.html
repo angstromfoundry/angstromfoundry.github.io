@@ -1,0 +1,21 @@
+{% include base_path %}
+
+{% if page.author and site.data.authors[page.author] %}
+  {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.author %}
+{% endif %}
+
+<div itemscope itemtype="https://schema.org/Organization">
+
+  <div class="author__avatar">
+    {% if author.avatar contains "://" %}
+      <img src="{{ author.avatar }}" alt="{{ author.name }}"  fetchpriority="high" />
+    {% else %}
+      <img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" alt="{{ author.name }}"  fetchpriority="high" />
+    {% endif %}
+  </div>
+
+  <div class="author__content">
+    {% if author.pronouns %}<p class="author__pronouns">{{ author.pronouns }}</p>{% endif %}
+    {% if author.bio %}<p class="author__bio">{% assign research_areas = author.bio | split: " · " %}{% for area in research_areas %}<span class="author__bio-line">{% if area == "ic.hitsz.edu.cn" %}<a class="author__institute-link" href="https://ic.hitsz.edu.cn">{{ area | escape }}</a> <span aria-hidden="true">⚙️🚀</span>{% else %}{{ area | escape }}{% endif %}</span>{% unless forloop.last %}<br>{% endunless %}{% endfor %}</p>{% endif %}
+  </div>
+</div>
