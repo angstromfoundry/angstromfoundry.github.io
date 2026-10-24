@@ -1,0 +1,12 @@
+- name: Derek
+  photo: /images/members/DDKN.jpg
+  photo_alt: "Portrait of Derek"
+- name: Rachel
+  photo: /images/members/RHZE.jpg
+  photo_alt: "Portrait of Rachel"
+- name: Ruby
+  photo: /images/members/RZSR.jpg
+  photo_alt: "Portrait of Ruby"
+- name: Dr. DH
+  photo: /images/members/Don.jpg
+  photo_alt: "Portrait of Dr. DH"

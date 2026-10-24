@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+<title id="title">Derek — placeholder portrait</title><desc id="desc">Fictional yellow-skinned cartoon avatar with bold outlines, not a likeness of the member</desc>
+<rect width="512" height="512" fill="#203c4a"/>
+<circle cx="256" cy="240" r="190" fill="#fff" opacity=".045"/>
+<g stroke="#191d29" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+
+<path d="M84 512L98 430Q111 377 201 365H309Q398 377 413 430L428 512" fill="#8eb8c5"/>
+<path d="M215 324V377Q255 414 296 377V323" fill="#f5cf48"/>
+<path d="M207 369L253 402L216 437L184 378M304 369L259 402L298 437L331 379" fill="#252534"/>
+<path d="M151 211Q128 203 130 235Q129 260 154 263M351 211Q377 204 375 237Q374 261 350 263" fill="#f5cf48"/>
+<path d="M153 186Q156 127 251 126Q345 128 350 189V269Q348 326 299 347Q256 365 211 345Q157 325 153 269Z" fill="#f5cf48"/>
+<path d="M157 177L153 135L178 145L179 112L207 129L223 100L246 125L275 106L289 136L321 124L333 170Q258 139 157 177Z" fill="#33303b"/>
+<ellipse cx="208" cy="220" rx="34" ry="39" fill="#fff"/>
+<ellipse cx="300" cy="220" rx="34" ry="39" fill="#fff"/>
+<circle cx="216" cy="223" r="7" fill="#191d29" stroke="none"/><circle cx="292" cy="223" r="7" fill="#191d29" stroke="none"/>
+<path d="M251 227L243 263Q259 276 277 263" fill="#f5cf48"/>
+<path d="M211 293Q255 320 299 290" fill="none"/>
+<g fill="none"><rect x="173" y="192" width="70" height="58" rx="18"/><rect x="266" y="192" width="70" height="58" rx="18"/><path d="M243 212H266"/></g>
+<path d="M145 452V512M366 452V512" fill="none" opacity=".5"/>
+</g></svg>

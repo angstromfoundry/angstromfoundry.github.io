@@ -1,0 +1,12 @@
+- id: interfaces
+  title: "surface and interface phenomena"
+  description: "understanding the interactions and phenomena that arise at surfaces and interfaces"
+- id: mechanics
+  title: "mechanically-coupled emergent properties"
+  description: "exploring tunable emergent properties arising from mechanical coupling"
+- id: self-assembly
+  title: "ångström-precise self-assembly"
+  description: "driving self-assembly at scale with ångström-level precision"
+- id: materials
+  title: "low-dimensional quantum materials and devices"
+  description: "building robust architectures via low-dimensional quantum materials and devices"

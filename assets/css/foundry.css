@@ -1,0 +1,61 @@
+@font-face{font-family:Manrope;src:url('../fonts/manrope-variable.ttf') format('truetype');font-weight:200 800;font-display:swap}body,h1,h2,h3,h4,h5,h6,.masthead,.masthead__inner-wrap,.author__name,.page__footer{font-family:Manrope,system-ui,sans-serif}body{line-height:1.75}h1,h2,h3{font-weight:600;letter-spacing:-.03em}h1{line-height:1.2}.page__content h2{margin-top:1.6em}.page__content h3{font-size:1.05em;line-height:1.45}.page__content a{overflow-wrap:anywhere}.author__avatar img{max-width:150px;border-radius:20px}.author__bio{line-height:1.6}.member-photo{width:160px;max-width:100%;border-radius:8px}.page__footer-copyright{font-size:.8em}html[data-theme='dark']{--global-bg-color:#0c1420;--global-text-color:#e8edf4;--global-link-color:#f0a77e;--global-link-color-hover:#ffc6a5;--global-border-color:#2c3b4f}.products-dropdown{position:relative}.products-dropdown summary{cursor:pointer;padding:.5rem 0;list-style:none}.products-dropdown summary::after{content:' ▾';font-size:.75em}.products-dropdown ul{position:absolute;top:100%;left:0;min-width:180px;padding:.5rem 1rem!important;background:var(--global-bg-color);border:1px solid var(--global-border-color);list-style:none!important;z-index:50}.products-dropdown li{display:block!important}.products-dropdown a{white-space:nowrap}.hidden-links .products-dropdown ul{position:static;border:0}.products-dropdown summary:focus-visible{outline:2px solid currentColor;outline-offset:4px}
+
+html[data-theme='dark']{--global-footer-bg-color:#121e2d;--global-link-color-visited:#f0a77e;--global-masthead-link-color-hover:#f0a77e;--global-dark-border-color:#2c3b4f;--global-text-color-light:#a9b7c8}
+
+
+.research-heading a{display:flex;align-items:center;gap:1rem}.research-heading .research-symbol{width:56px;height:56px;flex:0 0 56px;margin:0;object-fit:contain}html:not([data-theme='dark']) .research-symbol{filter:brightness(.2)}@media(max-width:600px){.research-heading a{gap:.75rem}.research-heading .research-symbol{width:48px;height:48px;flex-basis:48px}}
+
+a,a:visited,.page__content a,.masthead a{text-decoration:none!important}
+
+.page__content h2[id]{color:var(--global-link-color)}
+
+.page__content h2.home-section-heading{color:var(--global-text-color)}
+
+/* Keep sidebar links accessible without a Follow toggle. */
+.author__urls-wrapper{display:block;cursor:default}.author__urls-wrapper .author__urls{display:block!important;position:relative;right:auto;margin:0;padding:0;border:0;background:transparent;box-shadow:none;z-index:auto}.author__urls-wrapper .author__urls::before,.author__urls-wrapper .author__urls::after{display:none}
+
+/* Center the framed logo without inline-image baseline spacing. */
+.author__avatar img{display:block;aspect-ratio:1;object-fit:contain;box-sizing:border-box;margin-inline:auto}
+
+/* Align the sidebar with the main content and keep its caption within the logo edges. */
+.sidebar{margin-top:0}
+.sidebar .author__avatar,.sidebar .author__content{display:block;width:150px;max-width:100%;margin-inline:auto;padding:0}
+.sidebar .author__avatar img{width:100%;height:auto;margin:0}
+.sidebar .author__bio{margin:10px 0 20px;font-size:11.5px;line-height:1.7;overflow-wrap:normal;text-align:left}
+.sidebar .author__bio-line{white-space:nowrap}
+@media(min-width:1024px){.sidebar{padding-top:0}}
+
+/* Member cards scale with the available content width. */
+.team-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;align-items:start}
+.team-card{min-width:0;overflow:hidden;border:1px solid var(--global-border-color);border-radius:14px;background:var(--global-bg-color)}
+.team-card .team-portrait{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:cover;margin:0;background:#172435}
+.page__content .team-card .team-name{margin:0;padding:14px 16px;border:0;font-size:1.05em;line-height:1.3;color:var(--global-text-color)}
+@media(max-width:600px){.team-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.page__content .team-card .team-name{padding:12px}}
+@media(max-width:350px){.team-grid{grid-template-columns:1fr}}
+
+/* Fixed brand with swipeable navigation; links never move into a hidden menu. */
+.site-navigation{--nav-text-size:1rem;display:flex;align-items:center;gap:24px;min-width:0;width:100%;background:var(--global-bg-color)}
+.site-navigation__brand{display:flex;flex-direction:column;flex:0 0 auto;white-space:nowrap;font-size:calc(var(--nav-text-size)*1.15);line-height:1.08;font-weight:700;color:var(--global-masthead-link-color);padding:4px 0}
+.masthead__menu .site-navigation__links{display:flex;align-items:center;flex:1 1 0;min-width:0;gap:24px;overflow-x:auto;overflow-y:hidden;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;scrollbar-width:thin;margin:0;padding:0 2px}
+.site-navigation__links>li{flex:0 0 auto}
+.site-navigation__links a{display:block;font-size:var(--nav-text-size);padding:12px 0;color:var(--global-masthead-link-color);white-space:nowrap}
+.site-navigation__theme{display:flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;padding:10px;border:0;background:transparent;color:var(--global-text-color);cursor:pointer}
+.site-navigation a:focus-visible,.site-navigation__theme:focus-visible{outline:2px solid var(--global-link-color);outline-offset:-2px;border-radius:3px}
+@media(max-width:600px){.site-navigation{--nav-text-size:.8rem;gap:16px}.masthead__menu .site-navigation__links{gap:20px}}
+
+/* Clear the measured fixed header, including its two-line brand and scrollbar. */
+body{padding-top:var(--site-header-height,90px)}
+/* Use matching columns in the header and body; keep the sidebar in normal flow. */
+@media(min-width:925px){
+  .masthead__inner-wrap,#main{box-sizing:border-box;width:100%;max-width:1280px;margin-inline:auto;padding-left:32px;padding-right:32px}
+  .site-navigation,#main{display:grid;grid-template-columns:180px minmax(0,1fr);column-gap:32px}
+  #main{align-items:start}
+  #main::before,#main::after{display:none}
+  #main>.sidebar{position:static;float:none;transform:none;top:auto;width:auto;max-width:none;height:auto;overflow:visible;margin:0;padding:0}
+  #main>.page{float:none;width:100%;min-width:0;margin:0;padding:0}
+  .sidebar .author__avatar,.sidebar .author__content{margin-left:0;margin-right:0}
+  .masthead__menu .site-navigation__links{padding-left:0;padding-right:0}
+}
+
+.sidebar .author__bio .author__institute-link{color:var(--global-link-color)}
+.sidebar .author__bio .author__institute-link:hover{color:var(--global-link-color-hover)}

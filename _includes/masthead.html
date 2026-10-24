@@ -1,0 +1,27 @@
+{% include base_path %}
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="primary-nav" class="site-navigation" aria-label="Main navigation">
+        <a class="site-navigation__brand" href="{{ base_path }}/" aria-label="{{ site.title | escape }}"><span>Ångström</span><span>Foundry</span></a>
+        <ul class="site-navigation__links" aria-label="Swipe for more navigation links">
+          {% for link in site.data.navigation.main %}
+            {% if link.url contains 'http' %}
+              {% assign domain = '' %}
+            {% else %}
+              {% assign domain = base_path %}
+            {% endif %}
+            {% assign current_link = false %}
+            {% if page.url == link.url %}{% assign current_link = true %}{% endif %}
+            <li class="masthead__menu-item{% if current_link %} selected{% endif %}">
+              <a href="{{ domain }}{{ link.url }}"{% if current_link %} aria-current="page"{% endif %}>{{ link.title }}</a>
+            </li>
+          {% endfor %}
+          <li class="masthead__menu-item">
+            <button id="theme-toggle" class="site-navigation__theme" type="button" aria-label="Toggle color theme"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true"></i></button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>

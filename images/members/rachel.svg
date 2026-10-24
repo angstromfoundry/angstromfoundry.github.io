@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+<title id="title">Rachel — placeholder portrait</title><desc id="desc">Fictional yellow-skinned cartoon avatar with bold outlines, not a likeness of the member</desc>
+<rect width="512" height="512" fill="#3d3047"/>
+<circle cx="256" cy="240" r="190" fill="#fff" opacity=".045"/>
+<g stroke="#191d29" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+<path d="M151 214Q119 87 244 91Q370 79 368 223L385 373L317 389L189 382L127 368Z" fill="#4b3035"/>
+<path d="M84 512L98 430Q111 377 201 365H309Q398 377 413 430L428 512" fill="#bda6cf"/>
+<path d="M215 324V377Q255 414 296 377V323" fill="#f5cf48"/>
+<path d="M207 369L253 402L216 437L184 378M304 369L259 402L298 437L331 379" fill="#312635"/>
+<path d="M151 211Q128 203 130 235Q129 260 154 263M351 211Q377 204 375 237Q374 261 350 263" fill="#f5cf48"/>
+<path d="M153 186Q156 127 251 126Q345 128 350 189V269Q348 326 299 347Q256 365 211 345Q157 325 153 269Z" fill="#f5cf48"/>
+<path d="M151 191Q134 109 231 108Q334 89 356 190Q311 181 279 139Q229 184 151 191Z" fill="#4b3035"/>
+<ellipse cx="208" cy="220" rx="34" ry="39" fill="#fff"/>
+<ellipse cx="300" cy="220" rx="34" ry="39" fill="#fff"/>
+<circle cx="216" cy="223" r="7" fill="#191d29" stroke="none"/><circle cx="292" cy="223" r="7" fill="#191d29" stroke="none"/>
+<path d="M251 227L243 263Q259 276 277 263" fill="#f5cf48"/>
+<path d="M211 293Q255 320 299 290" fill="none"/>
+
+<path d="M145 452V512M366 452V512" fill="none" opacity=".5"/>
+</g></svg>

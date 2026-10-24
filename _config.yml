@@ -1,0 +1,82 @@
+locale: en-US
+site_theme: default
+title: "Ångström Foundry"
+name: "Ångström Foundry"
+title_separator: "|"
+description: "Research in self-assembly, interfaces, low-dimensional quantum materials, and mechanical coupling."
+url: "https://angstromfoundry.github.io"
+baseurl: ""
+repository: "angstromfoundry/angstromfoundry.github.io"
+author:
+  avatar: "angstrom-mark.svg"
+  name: "Ångström Foundry"
+  bio: "surfaces & interfaces · nano-mechanics · self-assembly · quantum materials & devices · @ic.hitsz.edu.cn"
+  location: null
+  uri: "https://ic.hitsz.edu.cn"
+  email: "angstromfoundry@gmail.com"
+  github: "angstromfoundry"
+breadcrumbs: false
+words_per_minute: 160
+future: false
+read_more: disabled
+comments:
+  provider: false
+analytics:
+  provider: false
+atom_feed:
+  hide: true
+social:
+  type: Organization
+  name: "Ångström Foundry"
+  links: ["https://github.com/angstromfoundry"]
+include: [_pages]
+exclude: [Gemfile, Gemfile.lock, vendor, .bundle, .github, .jekyll-cache, docs, README.md, UPSTREAM.md, LICENSE, package.json, package-lock.json, node_modules, scripts, Dockerfile, docker-compose.yaml]
+encoding: utf-8
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+collections:
+  members:
+    output: true
+    permalink: /team/:name/
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  - scope:
+      path: ""
+      type: members
+    values:
+      layout: single
+      author_profile: true
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      comments: false
+      share: false
+      related: false
+sass:
+  sass_dir: _sass
+  style: compressed
+permalink: /news/:year/:month/:day/:title/
+timezone: America/New_York
+plugins: [jekyll-feed, jekyll-sitemap, jekyll-redirect-from, jekyll-gist, jekyll-paginate, jemoji]
+category_archive:
+  type: liquid
+  path: /news/
+tag_archive:
+  type: liquid
+  path: /news/
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
